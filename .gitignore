@@ -8,7 +8,7 @@ Thumbs.db
 
 # Backend-specific ignores (ASP.NET)
 Backend/bin/
-Backend/obj/
+Backend/obj/*
 Backend/*.user
 Backend/*.suo
 Backend/*.userosscache
