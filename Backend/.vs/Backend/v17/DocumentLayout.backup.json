@@ -3,16 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|c:\\users\\anastasia\\documents\\projects\\learningproject\\dailynews\\backend\\models\\dtos\\responsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|solutionrelative:models\\dtos\\responsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\Migrations\\20241228184938_Second.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241228184938_Second.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|c:\\users\\anastasia\\documents\\projects\\learningproject\\dailynews\\backend\\repositories\\inewsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|solutionrelative:repositories\\inewsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|c:\\users\\anastasia\\documents\\projects\\learningproject\\dailynews\\backend\\models\\dtos\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|solutionrelative:models\\dtos\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|c:\\users\\anastasia\\documents\\projects\\learningproject\\dailynews\\backend\\models\\dtos\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|solutionrelative:models\\dtos\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|c:\\users\\anastasia\\documents\\projects\\learningproject\\dailynews\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|c:\\users\\anastasia\\documents\\projects\\learningproject\\dailynews\\backend\\automapper\\mapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|solutionrelative:automapper\\mapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|c:\\users\\anastasia\\documents\\projects\\learningproject\\dailynews\\backend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|c:\\users\\anastasia\\documents\\projects\\learningproject\\dailynews\\backend\\repositories\\accountrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|solutionrelative:repositories\\accountrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|c:\\users\\anastasia\\documents\\projects\\learningproject\\dailynews\\backend\\repositories\\iaccountrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|solutionrelative:repositories\\iaccountrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|c:\\users\\anastasia\\documents\\projects\\learningproject\\dailynews\\backend\\repositories\\newsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|solutionrelative:repositories\\newsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|c:\\users\\anastasia\\documents\\projects\\learningproject\\dailynews\\backend\\services\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|solutionrelative:services\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|c:\\users\\anastasia\\documents\\projects\\learningproject\\dailynews\\backend\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|solutionrelative:services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|c:\\users\\anastasia\\documents\\projects\\learningproject\\dailynews\\backend\\services\\inewsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,8 +51,8 @@
       "RelativeMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|solutionrelative:services\\newsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|c:\\users\\anastasia\\documents\\projects\\learningproject\\dailynews\\backend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|c:\\users\\anastasia\\documents\\projects\\learningproject\\dailynews\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7C989F7-C273-4665-86FF-53994D1FBACE}|Backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,45 +67,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ResponseDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\Models\\DTOs\\ResponseDTO.cs",
-              "RelativeDocumentMoniker": "Models\\DTOs\\ResponseDTO.cs",
-              "ToolTip": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\Models\\DTOs\\ResponseDTO.cs",
-              "RelativeToolTip": "Models\\DTOs\\ResponseDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T17:34:18.176Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Response.cs",
-              "DocumentMoniker": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\Models\\DTOs\\Response.cs",
-              "RelativeDocumentMoniker": "Models\\DTOs\\Response.cs",
-              "ToolTip": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\Models\\DTOs\\Response.cs",
-              "RelativeToolTip": "Models\\DTOs\\Response.cs",
+              "Title": "20241228184938_Second.cs",
+              "DocumentMoniker": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\Migrations\\20241228184938_Second.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241228184938_Second.cs",
+              "ToolTip": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\Migrations\\20241228184938_Second.cs",
+              "RelativeToolTip": "Migrations\\20241228184938_Second.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T17:34:02.674Z",
+              "WhenOpened": "2024-12-28T18:49:38.717Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "INewsRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\Repositories\\INewsRepo.cs",
-              "RelativeDocumentMoniker": "Repositories\\INewsRepo.cs",
-              "ToolTip": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\Repositories\\INewsRepo.cs",
-              "RelativeToolTip": "Repositories\\INewsRepo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
+              "Title": "LoginResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\Models\\DTOs\\LoginResponse.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\LoginResponse.cs",
+              "ToolTip": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\Models\\DTOs\\LoginResponse.cs",
+              "RelativeToolTip": "Models\\DTOs\\LoginResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T17:33:41.853Z",
+              "WhenOpened": "2024-12-28T18:49:09.495Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
+              "Title": "MapperProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\AutoMapper\\MapperProfile.cs",
+              "RelativeDocumentMoniker": "AutoMapper\\MapperProfile.cs",
+              "ToolTip": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\AutoMapper\\MapperProfile.cs",
+              "RelativeToolTip": "AutoMapper\\MapperProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T18:48:29.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
@@ -85,12 +113,77 @@
               "RelativeToolTip": "Data\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T17:33:42.943Z",
+              "WhenOpened": "2024-12-28T18:48:24.019Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
+              "Title": "AccountRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\Repositories\\AccountRepo.cs",
+              "RelativeDocumentMoniker": "Repositories\\AccountRepo.cs",
+              "ToolTip": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\Repositories\\AccountRepo.cs",
+              "RelativeToolTip": "Repositories\\AccountRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T18:46:55.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IAccountRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\Repositories\\IAccountRepo.cs",
+              "RelativeDocumentMoniker": "Repositories\\IAccountRepo.cs",
+              "ToolTip": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\Repositories\\IAccountRepo.cs",
+              "RelativeToolTip": "Repositories\\IAccountRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T18:46:49.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NewsRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\Repositories\\NewsRepo.cs",
+              "RelativeDocumentMoniker": "Repositories\\NewsRepo.cs",
+              "ToolTip": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\Repositories\\NewsRepo.cs",
+              "RelativeToolTip": "Repositories\\NewsRepo.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T18:46:45.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IAccountService.cs",
+              "DocumentMoniker": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\Services\\IAccountService.cs",
+              "RelativeDocumentMoniker": "Services\\IAccountService.cs",
+              "ToolTip": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\Services\\IAccountService.cs",
+              "RelativeToolTip": "Services\\IAccountService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T18:46:42.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\Services\\AccountService.cs",
+              "RelativeDocumentMoniker": "Services\\AccountService.cs",
+              "ToolTip": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\Services\\AccountService.cs",
+              "RelativeToolTip": "Services\\AccountService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T18:46:41.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "INewsService.cs",
               "DocumentMoniker": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\Services\\INewsService.cs",
               "RelativeDocumentMoniker": "Services\\INewsService.cs",
@@ -98,12 +191,12 @@
               "RelativeToolTip": "Services\\INewsService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T17:33:38.332Z",
+              "WhenOpened": "2024-12-28T18:46:40.135Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "NewsService.cs",
               "DocumentMoniker": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\Services\\NewsService.cs",
               "RelativeDocumentMoniker": "Services\\NewsService.cs",
@@ -111,7 +204,33 @@
               "RelativeToolTip": "Services\\NewsService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T17:33:35.702Z",
+              "WhenOpened": "2024-12-28T18:46:38.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAMwA4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-28T18:46:33.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Anastasia\\Documents\\Projects\\LearningProject\\DailyNews\\Backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAGoAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T18:38:29.457Z",
               "EditorCaption": ""
             }
           ]

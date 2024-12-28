@@ -149,3 +149,4 @@ C:\Users\Anastasia\Documents\Projects\LearningProject\DailyNews\Backend\obj\Debu
 C:\Users\Anastasia\Documents\Projects\LearningProject\DailyNews\Backend\obj\Debug\net8.0\Backend.pdb
 C:\Users\Anastasia\Documents\Projects\LearningProject\DailyNews\Backend\obj\Debug\net8.0\Backend.genruntimeconfig.cache
 C:\Users\Anastasia\Documents\Projects\LearningProject\DailyNews\Backend\obj\Debug\net8.0\ref\Backend.dll
+C:\Users\Anastasia\Documents\Projects\LearningProject\DailyNews\Backend\obj\Debug\net8.0\Backend.sourcelink.json
