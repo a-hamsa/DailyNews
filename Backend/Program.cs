@@ -23,6 +23,16 @@ builder.Services.AddScoped<IAccountRepo, AccountRepo>();
 builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddAuthorization();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowReactApp", policy =>
+    {
+        policy.WithOrigins("http://localhost:3001") // Frontend URL
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
 builder.Services.AddAuthorization();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
@@ -77,39 +87,39 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseCors("AllowReactApp");
 app.UseAuthentication();
 app.UseAuthorization();
 
 app.UseHttpsRedirection();
 
 //Authetication
-app.MapPost("/Register", async (RegisterDTO request, IAccountService accountService) =>
+app.MapPost("api/Register", async (RegisterDTO request, IAccountService accountService) =>
 {
     return Results.Ok(await accountService.Register(request));
 }).AllowAnonymous();
-app.MapPost("/Login", async (LoginDTO request, IAccountService accountService) =>
+app.MapPost("api/Login", async (LoginDTO request, IAccountService accountService) =>
 {
     return Results.Ok(await accountService.Login(request));
 }).AllowAnonymous();
 
-app.MapGet("/GetNews", async (INewsService newsService) =>
+app.MapGet("api/GetNews", async (INewsService newsService) =>
 {
     return Results.Ok(await newsService.GetAll());
 });
-app.MapGet("/GetNews/{id:int}", async (INewsService newsService, int id) =>
+app.MapGet("api/GetNews/{id:int}", async (INewsService newsService, int id) =>
 {
     return Results.Ok(await newsService.GetById(id));
 });
-app.MapPost("/AddNews", async (AddReqeustDTO request, INewsService newsService) =>
+app.MapPost("api/AddNews", async (AddReqeustDTO request, INewsService newsService) =>
 {
     return Results.Ok(await newsService.Add(request));
 }).RequireAuthorization();
-app.MapPut("/UpdateNews", async (UpdateRequestDTO request, INewsService newsService) =>
+app.MapPut("api/UpdateNews", async (UpdateRequestDTO request, INewsService newsService) =>
 {
     return Results.Ok(await newsService.Update(request));
 }).RequireAuthorization();
-app.MapDelete("/DeleteNews/{id:int}", async (INewsService newsService, int id) =>
+app.MapDelete("api/DeleteNews/{id:int}", async (INewsService newsService, int id) =>
 {
     return Results.Ok(await newsService.Delete(id));
 }).RequireAuthorization();
