@@ -50,6 +50,11 @@ const Navbar = () => {
                 Contact
               </a>
             </li>
+            <li>
+              <a href="/login" className="hover:text-gray-200">
+                Login
+              </a>
+            </li>
           </ul>
         </div>
       </div>
