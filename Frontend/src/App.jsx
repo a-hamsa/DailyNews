@@ -8,6 +8,7 @@ import Register from "./pages/Register";
 import NewsDetails from "./pages/NewsDetails";
 import News from "./pages/admin/News";
 import AddNews from "./pages/admin/AddNews";
+import EditNews from "./pages/admin/EditNews";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/news/:id" element={<NewsDetails />} />
           <Route path="/dashboard/news" element={<News />} />
           <Route path="/dashboard/news/add" element={<AddNews />} />
+          <Route path="/dashboard/news/edit/:id" element={<EditNews />} />
         </Routes>
       </Router>
     </>
