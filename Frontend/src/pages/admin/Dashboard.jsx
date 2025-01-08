@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import { useNavigate, Route, Routes } from 'react-router-dom';
 import Sidebar from '../../components/Sidebar';
+import News from './News';
+import AddNews from './AddNews';
+import EditNews from './EditNews';
 
 const Dashboard = () => {
     const navigate = useNavigate();
@@ -21,6 +24,9 @@ const Dashboard = () => {
                         <h1 className="text-2xl font-bold">Dashboard</h1>
                         <p>Welcome to your dashboard!</p>
                     </div>} />
+                    <Route path="/news" element={<News />} />
+                    <Route path="/news/add" element={<AddNews />} />
+                    <Route path="/news/edit/:id" element={<EditNews />} />
                 </Routes>
             </div>
         </div>
