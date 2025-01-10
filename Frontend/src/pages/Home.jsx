@@ -5,6 +5,7 @@ import Carousel from '../components/Caraousel';
 import Description from '../components/Description';
 import NewsList from '../components/NewsList';
 import api from '../api';
+import Footer from '../components/Footer';
 
 const Home = () => {
     const [news, setNews] = useState([]);
@@ -29,6 +30,7 @@ const Home = () => {
             <Carousel />
             <Description />
             <NewsList news={news} onNewsClick={handleNewsClick} />
+            <Footer />
         </div>
     );
 };

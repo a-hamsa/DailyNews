@@ -4,6 +4,7 @@ import Sidebar from '../../components/Sidebar';
 import News from './News';
 import AddNews from './AddNews';
 import EditNews from './EditNews';
+import AdminIndex from './Index';
 
 const Dashboard = () => {
     const navigate = useNavigate();
@@ -20,10 +21,7 @@ const Dashboard = () => {
             <Sidebar />
             <div className="flex-1 p-4">
                 <Routes>
-                    <Route path="/" element={<div>
-                        <h1 className="text-2xl font-bold">Dashboard</h1>
-                        <p>Welcome to your dashboard!</p>
-                    </div>} />
+                    <Route path="/" element={<AdminIndex /> } />
                     <Route path="/news" element={<News />} />
                     <Route path="/news/add" element={<AddNews />} />
                     <Route path="/news/edit/:id" element={<EditNews />} />

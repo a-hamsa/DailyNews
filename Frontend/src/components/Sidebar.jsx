@@ -7,7 +7,7 @@ const Sidebar = () => {
     return (
         <div className="w-40 md:w-48 h-screen bg-gray-800 text-white">
             <div className="p-4 text-center text-xl font-bold">
-                DailyNews
+                <Link to="/" className="block">DailyNews</Link>
             </div>
             <ul className="py-4">
                 <li className={`mb-4 ${location.pathname === '/dashboard' ? 'bg-gray-700' : ''}`}>

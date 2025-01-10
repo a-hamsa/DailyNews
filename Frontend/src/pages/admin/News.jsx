@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import api from '../../api';
 import NewsTable from '../../components/NewsTable';
-import Sidebar from '../../components/Sidebar';
+import DashboardTitle from '../../components/DashboardTitle';
 
 const News = () => {
   const [news, setNews] = useState([]);
@@ -62,8 +62,8 @@ const News = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">News Management</h1>
-      <Link to="/dashboard/news/add" className="bg-blue-500 text-white px-4 py-2 rounded mb-4 inline-block">Add News</Link>
+      <DashboardTitle title="News Management" />
+      <Link to="/dashboard/news/add" className="bg-blue-500 text-white px-4 py-2 rounded my-4 inline-block">Add News</Link>
       <NewsTable news={news} setNews={setNews} onEdit={handleEdit} onDelete={deleteNews} />
     </div>
   );
