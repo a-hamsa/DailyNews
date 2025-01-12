@@ -37,13 +37,15 @@ const Carousel = () => {
 
     return (
         <div className="relative w-full h-[calc(100vh-64px)] overflow-hidden">
-            {images.map((image, index) => (
-                <div
-                    key={index}
-                    className={`absolute inset-0 transition-opacity duration-1000 ${index === currentIndex ? "opacity-100" : "opacity-0"}`}
-                    style={{ backgroundImage: `url(${image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-                />
-            ))}
+            <div className="absolute inset-0 flex transition-transform duration-1000" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+                {images.map((image, index) => (
+                    <div
+                        key={index}
+                        className="w-full h-full flex-shrink-0"
+                        style={{ backgroundImage: `url(${image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                    />
+                ))}
+            </div>
             <div className="absolute bottom-0 left-0 w-full p-6 bg-black bg-opacity-70 text-white text-center">
                 <h1 className="text-2xl md:text-4xl font-bold drop-shadow-lg">{headline}</h1>
             </div>
