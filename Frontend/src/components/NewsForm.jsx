@@ -31,7 +31,7 @@ const NewsForm = ({ news, onChange, onSubmit, submitLabel }) => {
       <input
         type="date"
         name="date"
-        value={news.date}
+        value={news.date.split('T')[0]}
         onChange={onChange}
         className="border p-2 mb-2 w-full"
       />

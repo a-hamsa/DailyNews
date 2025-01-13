@@ -5,7 +5,7 @@ import api from '../../api';
 import NewsForm from '../../components/NewsForm';
 
 const EditNews = () => {
-  const [news, setNews] = useState({ title: '', description: '', author: '', date: '' });
+  const [news, setNews] = useState({title: '', description: '', author: '', date: '' });
   const navigate = useNavigate();
   const { id } = useParams();
 
@@ -29,7 +29,12 @@ const EditNews = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await api.put(`/UpdateNews/${id}`, news);
+      const token = localStorage.getItem('token');
+      await api.put(`/UpdateNews`, news, {
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      });
       Swal.fire(
         'Success!',
         'News has been updated.',
@@ -38,6 +43,7 @@ const EditNews = () => {
       navigate('/dashboard/news');
     } catch (error) {
       console.error('Error updating news:', error);
+      console.log(news, token);
     }
   };
 
@@ -45,7 +51,7 @@ const EditNews = () => {
     <div className="container mx-auto p-4">
       <h1 className="text-2xl font-bold mb-4">Edit News</h1>
       <NewsForm news={news} onChange={handleChange} onSubmit={handleSubmit} submitLabel="Update News" />
-      <button onClick={() => navigate('/dashboard/news')} className="bg-gray-500 text-white px-4 py-2 rounded mt-4">
+      <button type="button" onClick={() => navigate('/dashboard/news')} className="bg-gray-500 text-white px-4 py-2 rounded mt-4">
         Cancel
       </button>
     </div>

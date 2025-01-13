@@ -16,7 +16,7 @@ const AddNews = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const token = localStorage.getItem('token'); // Assuming token is stored in localStorage
+      const token = localStorage.getItem('token');
       await api.post('/AddNews', news, {
         headers: {
           Authorization: `Bearer ${token}`,
