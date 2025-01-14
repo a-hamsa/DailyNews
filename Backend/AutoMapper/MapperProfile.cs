@@ -12,6 +12,7 @@ namespace Backend.AutoMapper
             CreateMap<UpdateRequestDTO, News>();
             CreateMap<News, ResponseDTO>();
             CreateMap<RegisterDTO, User>();
+            CreateMap<User, UserDTO>();
         }
     }
 }

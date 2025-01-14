@@ -124,4 +124,9 @@ app.MapDelete("api/DeleteNews/{id:int}", async (INewsService newsService, int id
     return Results.Ok(await newsService.Delete(id));
 }).RequireAuthorization();
 
+app.MapGet("api/GetAllUsers", async (IAccountService accountService) =>
+{
+    return Results.Ok(await accountService.GetAllUsers());
+}).RequireAuthorization();
+
 app.Run();

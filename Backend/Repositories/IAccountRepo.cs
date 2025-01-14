@@ -6,5 +6,6 @@ namespace Backend.Repositories
     {
         Task<Response> Register(RegisterDTO registerDTO);
         Task<LoginResponse> Login(LoginDTO loginDTO);
+        Task<IEnumerable<UserDTO>> GetAllUsers();
     }
 }

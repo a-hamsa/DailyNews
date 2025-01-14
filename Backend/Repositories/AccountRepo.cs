@@ -75,5 +75,11 @@ namespace Backend.Repositories
             await appDbContext.SaveChangesAsync();
             return new Response(true, "Created");
         }
+
+        public async Task<IEnumerable<UserDTO>> GetAllUsers()
+        {
+            var users = await appDbContext.Users.ToListAsync();
+            return mapper.Map<IEnumerable<UserDTO>>(users);
+        }
     }
 }
