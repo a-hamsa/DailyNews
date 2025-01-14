@@ -32,9 +32,11 @@ This project is a modern web application built using cutting-edge technologies t
 ## API Endpoints
 
 ### User Endpoints
+- **GET** `api/GetAllUsers`: Retrieves a list of all users.
 - **POST** `api/Register`: Registers a new user.
 - **POST** `api/Login`: Authenticates a user and provides access.
-- **GET** `api/GetAllUsers`: Retrieves a list of all users.
+- **POST** `api/Logout`: Remove user access by add Bearer token to blacklist token database.
+
 
 ### News Endpoints
 - **GET** `api/GetNews`: Retrieves a list of all news articles.
@@ -64,6 +66,13 @@ This project is a modern web application built using cutting-edge technologies t
 | `Description`| `string` | A brief description or body of the news.   |
 | `Date`       | `Date`   | The publication date of the news article.  |
 | `Author`     | `string` | The author of the news article.            |
+
+### News Model
+| Attribute    | Type     | Description                                 |
+|--------------|----------|-------------------------------------------- |
+| `Id`         | `int`    | Unique identifier for the Blacklisted Token.|
+| `Token`      | `string` | The token that blacklisted.                 |
+| `Expiration` | `Date`   | The Expiration date of the token.           |
 
 ---
 
