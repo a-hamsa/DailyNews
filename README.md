@@ -32,15 +32,16 @@ This project is a modern web application built using cutting-edge technologies t
 ## API Endpoints
 
 ### User Endpoints
-- **POST** `/Register`: Registers a new user.
-- **POST** `/Login`: Authenticates a user and provides access.
+- **POST** `api/Register`: Registers a new user.
+- **POST** `api/Login`: Authenticates a user and provides access.
+- **GET** `api/GetAllUsers`: Retrieves a list of all users.
 
 ### News Endpoints
-- **GET** `/GetNews`: Retrieves a list of all news articles.
-- **GET** `/GetNews/{id}`: Retrieves the details of a specific news article.
-- **POST** `/AddNews`: Adds a new news article.
-- **PUT** `/UpdateNews`: Updates an existing news article.
-- **DELETE** `/DeleteNews/{id}`: Deletes a news article by its ID.
+- **GET** `api/GetNews`: Retrieves a list of all news articles.
+- **GET** `api/GetNews/{id}`: Retrieves the details of a specific news article.
+- **POST** `api/AddNews`: Adds a new news article.
+- **PUT** `api/UpdateNews`: Updates an existing news article.
+- **DELETE** `api/DeleteNews/{id}`: Deletes a news article by its ID.
 
 ---
 
