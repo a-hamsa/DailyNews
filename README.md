@@ -67,7 +67,7 @@ This project is a modern web application built using cutting-edge technologies t
 | `Date`       | `Date`   | The publication date of the news article.  |
 | `Author`     | `string` | The author of the news article.            |
 
-### News Model
+### BlackListedToken Model
 | Attribute    | Type     | Description                                 |
 |--------------|----------|-------------------------------------------- |
 | `Id`         | `int`    | Unique identifier for the Blacklisted Token.|
