@@ -7,6 +7,6 @@ namespace Backend.Data
     {
         public DbSet<News> News { get; set; }
         public DbSet<User> Users{ get; set; }
-
+        public DbSet<BlacklistedToken> BlacklistedTokens { get; set; }
     }
 }

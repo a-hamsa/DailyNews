@@ -81,5 +81,22 @@ namespace Backend.Repositories
             var users = await appDbContext.Users.ToListAsync();
             return mapper.Map<IEnumerable<UserDTO>>(users);
         }
+
+        public async Task<Response> Logout()
+        {
+            var token = "";
+            var expiration = DateTime.Now.AddDays(1); 
+
+            var blacklistedToken = new BlacklistedToken
+            {
+                Token = token,
+                Expiration = expiration
+            };
+
+            appDbContext.BlacklistedTokens.Add(blacklistedToken);
+            await appDbContext.SaveChangesAsync();
+
+            return new Response(true, "Logout successful");
+        }
     }
 }

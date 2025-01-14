@@ -11,8 +11,6 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("default")));
@@ -34,6 +32,7 @@ builder.Services.AddCors(options =>
 });
 
 builder.Services.AddAuthorization();
+builder.Services.AddSingleton<ITokenReplayCache, TokenReplayCache>();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -44,8 +43,28 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateIssuerSigningKey = true,
             ValidIssuer = builder.Configuration["Jwt:Issuer"],
             ValidAudience = builder.Configuration["Jwt:Audience"],
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]!))
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]!)),
+            ValidateTokenReplay = true
         };
+        options.Events = new JwtBearerEvents
+        {
+            OnMessageReceived = async context =>
+            {
+                var token = context.Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+                var dbContext = context.HttpContext.RequestServices.GetRequiredService<AppDbContext>();
+                var blacklistedToken = await dbContext.BlacklistedTokens.FirstOrDefaultAsync(t => t.Token == token);
+                if (blacklistedToken != null)
+                {
+                    context.Fail("This token is blacklisted.");
+                }
+            }
+        };
+    });
+
+builder.Services.AddOptions<JwtBearerOptions>(JwtBearerDefaults.AuthenticationScheme)
+    .Configure<ITokenReplayCache>((options, tokenReplayCache) =>
+    {
+        options.TokenValidationParameters.TokenReplayCache = tokenReplayCache;
     });
 
 builder.Services.AddSwaggerGen(swagger =>
@@ -127,6 +146,11 @@ app.MapDelete("api/DeleteNews/{id:int}", async (INewsService newsService, int id
 app.MapGet("api/GetAllUsers", async (IAccountService accountService) =>
 {
     return Results.Ok(await accountService.GetAllUsers());
+}).RequireAuthorization();
+
+app.MapPost("api/Logout", async (IAccountService accountService) =>
+{
+    return Results.Ok(await accountService.Logout());
 }).RequireAuthorization();
 
 app.Run();

@@ -7,5 +7,6 @@ namespace Backend.Services
         Task<Response> Register(RegisterDTO registerDTO);
         Task<LoginResponse> Login(LoginDTO loginDTO);
         Task<IEnumerable<UserDTO>> GetAllUsers();
+        Task<Response> Logout();
     }
 }

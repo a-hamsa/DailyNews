@@ -10,5 +10,7 @@ namespace Backend.Services
         public async Task<Response> Register(RegisterDTO registerDTO) => await account.Register(registerDTO);
 
         public async Task<IEnumerable<UserDTO>> GetAllUsers() => await account.GetAllUsers();
+
+        public async Task<Response> Logout() => await account.Logout();
     }
 }
