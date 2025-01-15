@@ -8,5 +8,6 @@ namespace Backend.Repositories
         Task<LoginResponse> Login(LoginDTO loginDTO);
         Task<IEnumerable<UserDTO>> GetAllUsers();
         Task<Response> Logout();
+        Task<bool> AddUser(AddUserDTO request);
     }
 }

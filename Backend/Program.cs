@@ -153,4 +153,9 @@ app.MapPost("api/Logout", async (IAccountService accountService) =>
     return Results.Ok(await accountService.Logout());
 }).RequireAuthorization();
 
+app.MapPost("api/AddUsers", async (AddUserDTO request, IAccountService accountService) =>
+{
+    return Results.Ok(await accountService.AddUser(request));
+}).RequireAuthorization();
+
 app.Run();

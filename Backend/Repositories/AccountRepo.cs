@@ -98,5 +98,21 @@ namespace Backend.Repositories
 
             return new Response(true, "Logout successful");
         }
+
+        public async Task<bool> AddUser(AddUserDTO request)
+        {
+            var user = new User
+            {
+                Username = request.Username,
+                Password = BCrypt.Net.BCrypt.HashPassword(request.Password),
+                Email = request.Email,
+                Role = request.Role
+            };
+
+            appDbContext.Users.Add(user);
+            await appDbContext.SaveChangesAsync();
+
+            return true;
+        }
     }
 }

@@ -12,5 +12,7 @@ namespace Backend.Services
         public async Task<IEnumerable<UserDTO>> GetAllUsers() => await account.GetAllUsers();
 
         public async Task<Response> Logout() => await account.Logout();
+
+        public async Task<bool> AddUser(AddUserDTO request) => await account.AddUser(request);
     }
 }
