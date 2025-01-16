@@ -35,6 +35,7 @@ This project is a modern web application built using cutting-edge technologies t
 - **GET** `api/GetAllUsers`: Retrieves a list of all users.
 - **POST** `api/Register`: Registers a new user.
 - **POST** `api/Login`: Authenticates a user and provides access.
+- **POST** `api/AddUsers`: Adds a new user.
 - **POST** `api/Logout`: Remove user access by add Bearer token to blacklist token database.
 
 
