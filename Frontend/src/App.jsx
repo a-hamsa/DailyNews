@@ -6,6 +6,7 @@ import Dashboard from "./pages/admin/Dashboard";
 import "./App.css";
 import Register from "./pages/Register";
 import NewsDetails from "./pages/NewsDetails";
+import Users from './pages/admin/Users';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/dashboard/*" element={<Dashboard />} /> 
           <Route path="/register" element={<Register />} /> 
           <Route path="/news/:id" element={<NewsDetails />} />
+          <Route path="/admin/users" element={<Users />} />
         </Routes>
       </Router>
     </>
