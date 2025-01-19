@@ -65,7 +65,7 @@ const Sidebar = () => {
                         <li className={`mb-4 ${location.pathname === '/dashboard' ? 'bg-gray-700' : ''}`}>
                             <Link to="/dashboard" className="block pl-4 md:pl-6 p-2 rounded hover:bg-gray-700">Home</Link>
                         </li>
-                        <li className={` ${location.pathname.startsWith('/dashboard/news') ? 'bg-gray-700' : ''}`}>
+                        <li className={`mb-4 ${location.pathname.startsWith('/dashboard/news') ? 'bg-gray-700' : ''}`}>
                             <Link to="/dashboard/news" className="block pl-4 md:pl-6 p-2 rounded hover:bg-gray-700">News</Link>
                         </li>
                         <li className={` ${location.pathname.startsWith('/admin/users') ? 'bg-gray-700' : ''}`}>
