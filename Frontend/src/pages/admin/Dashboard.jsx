@@ -5,6 +5,7 @@ import News from './News';
 import AddNews from './AddNews';
 import EditNews from './EditNews';
 import AdminIndex from './Index';
+import Users from './Users';
 
 const Dashboard = () => {
     const navigate = useNavigate();
@@ -25,6 +26,7 @@ const Dashboard = () => {
                     <Route path="/news" element={<News />} />
                     <Route path="/news/add" element={<AddNews />} />
                     <Route path="/news/edit/:id" element={<EditNews />} />
+                    <Route path="/users" element={<Users />} />
                 </Routes>
             </div>
         </div>

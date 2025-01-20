@@ -18,7 +18,6 @@ function App() {
           <Route path="/dashboard/*" element={<Dashboard />} /> 
           <Route path="/register" element={<Register />} /> 
           <Route path="/news/:id" element={<NewsDetails />} />
-          <Route path="/admin/users" element={<Users />} />
         </Routes>
       </Router>
     </>

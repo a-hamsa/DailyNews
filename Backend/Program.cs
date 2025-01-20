@@ -44,7 +44,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidIssuer = builder.Configuration["Jwt:Issuer"],
             ValidAudience = builder.Configuration["Jwt:Audience"],
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]!)),
-            ValidateTokenReplay = true
+            ValidateTokenReplay = true,
+            ClockSkew = TimeSpan.Zero
         };
         options.Events = new JwtBearerEvents
         {
@@ -146,7 +147,7 @@ app.MapDelete("api/DeleteNews/{id:int}", async (INewsService newsService, int id
 app.MapGet("api/GetAllUsers", async (IAccountService accountService) =>
 {
     return Results.Ok(await accountService.GetAllUsers());
-}).RequireAuthorization();
+});
 
 app.MapPost("api/Logout", async (IAccountService accountService) =>
 {

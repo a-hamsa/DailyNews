@@ -69,7 +69,7 @@ const Sidebar = () => {
                             <Link to="/dashboard/news" className="block pl-4 md:pl-6 p-2 rounded hover:bg-gray-700">News</Link>
                         </li>
                         <li className={` ${location.pathname.startsWith('/admin/users') ? 'bg-gray-700' : ''}`}>
-                            <Link to="/admin/users" className="block pl-4 md:pl-6 p-2 rounded hover:bg-gray-700">User Management</Link>
+                            <Link to="/dashboard/users" className="block pl-4 md:pl-6 p-2 rounded hover:bg-gray-700">User Management</Link>
                         </li>
                     </ul>
                 </div>
