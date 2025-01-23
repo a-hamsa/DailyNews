@@ -13,7 +13,7 @@ This project is a modern web application built using cutting-edge technologies t
 - **User Authentication**: Secure registration and login functionality.
 - **News Management**: Add, update, view, and delete news articles.
 - **Responsive Design**: Tailored for various devices using Tailwind CSS.
-- **API-Driven**: A RESTful API backend for efficient data operations.
+- **API-Driven**: A Minimal API backend for efficient data operations.
 
 ---
 
