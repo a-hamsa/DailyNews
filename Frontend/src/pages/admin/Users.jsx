@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import api from "../../api";
 import DashboardTitle from "../../components/DashboardTitle";
+import { Link } from 'react-router-dom';
 
 const Users = () => {
   const [users, setUsers] = useState([]);
@@ -21,7 +22,8 @@ const Users = () => {
   return (
     <div className="flex-1 p-4">
       <DashboardTitle title="User Management" />
-      <table className="min-w-full bg-white">
+      <Link to="/dashboard/users/add" className="bg-blue-500 text-white px-4 py-2 rounded my-4 inline-block">Add News</Link>
+      <table className="min-w-full mt-5 bg-white">
         <thead>
           <tr>
             <th className="py-2">Username</th>
